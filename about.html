@@ -1,84 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-   <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Template</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    <link href="style.css" rel="stylesheet">
-</head>
+    <link href="style.css" rel="stylesheet" />
+  </head>
 
-<!-- Toggle light-page ↔ dark-page -->
+  <!-- Toggle light-page ↔ dark-page -->
 
-<body class="light-page">
-
+  <body class="light-page">
     <!-- Navbar gets added here -->
     <div id="nav-placeholder"></div>
 
     <!-- Main content -->
     <main class="container py-4">
-        <h1 class="mb-2">Simple Theme in Action</h1>
-        <p class="mb-3">
-            This paragraph uses the page text color. Here’s a <a href="#">content link</a>.
-        </p>
-
-        <!-- About me  -->
-        <section class="p-5 mb-4 bg-body-tertiary rounded-3">
-            <div style="text-align: center;">
-                <h2 class="display-6 mb-3">About me</h2>
-            <p> My name is Jesus Lopez and I will talk about myslef.
-                I am a student in MSU Denver University and I am studying computer science.
-                I am currently learning web development and this is my first website. 
-                Before I even started in this computer science class I just enjoyed 
-                spending time with my friends and family. Some of my hobies include 
-                playing games, watching movies or series like Dexter, listening to music, 
-                longboarding and working. I work at Vans shoe place because I really love 
-                how comfortable and beutiful their shoes and shirts look like, highly 
-                recomend their products.Finaly during my highschool years in Holy Famly, 
-                I loved taking art class because I was able to create things like a paracord 
-                belt, design my own leather belt and learned how to do stained glass.   
-            </p>
-            </div>
-        </section>
-
-         <!-- Card -->
-        <div class="card shadow-sm mb-4" style="max-width: 40rem;">
-            <div class="card-body">
-                <h4 class="card-title h5">Card Title</h4>
-                <p class="card-text">Cards pick up the surface/background and text from the theme.</p>
-                <a class="btn btn-primary" href="#">Card Action</a>
-            </div>
+      <!-- About me  -->
+      <section class="p-5 mb-4 bg-body-tertiary rounded-3">
+        <div style="text-align: center">
+          <h1 class="display-6 mb-3">About me</h1>
+          <p>
+            My name is Jesus Lopez and I will talk about myslef. I am a student
+            in MSU Denver University and I am studying computer science. I am
+            currently learning web development and this is my first website.
+            Before I even started in this computer science class I just enjoyed
+            spending time with my friends and family. Some of my hobies include
+            playing games, watching movies or series like Dexter, listening to
+            music, longboarding and working. I work at Vans shoe place because I
+            really love how comfortable and beutiful their shoes and shirts look
+            like, highly recomend their products.Finaly during my highschool
+            years in Holy Famly, I loved taking art class because I was able to
+            create things like a paracord belt, design my own leather belt and
+            learned how to do stained glass.
+          </p>
         </div>
+      </section>
 
-        <!-- Box -->
-        <div class="box mb-4">
-            <h3 class="h5">Ineterest and links</h3>
-            <p> I talked about some of my interest but if you would like to , I will leave a link to take you to the Vans website to check out their product and my spotify profile if you would like to follow me. </p>
-            <p class="mb-0">This link will take you to the Vans Website. Join the fans family if you would like! <a href="https://www.vans.com/en-us">Vans.com</a></p>
-            <p class="mb-0">This link will take you to my profile in spotify if you would like to follow me. <a href="https://open.spotify.com/user/3y1qggt0kva5z83o5lf4fzh5b?si=5d07946382534738">Juan's Profile</a></p>
+      <!-- Card -->
+      <div class="card shadow-sm mb-4" style="max-width: 40rem">
+        <div class="card-body">
+          <div style="text-align: center">
+            <h2 class="card-title h5">Image</h2>
+            <p class="card-text">Here is an image of me.</p>
+            <div class="row">
+              <div class="col">
+                <img
+                  class="image-fluid w-50"
+                  src="images/Pond.jpg"
+                  alt="Me infront of a pond"
+                />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- List group -->
-        <ul class="list-group" style="max-width: 28rem;">
-            <li class="list-group-item">First item</li>
-            <li class="list-group-item">Second item</li>
-            <li class="list-group-item">Third item</li>
-        </ul>
-    </main>
-
-
+      <!-- Box -->
+      <div class="box mb-4">
+        <div style="text-align: center">
+          <h3 class="h5">Interest and links</h3>
+          <p>
+            I talked about some of my interest but if you would like to , I will
+            leave a link to take you to the Vans website to check out their
+            product and my spotify profile if you would like to follow me.
+          </p>
+          <p class="mb-0">
+            This link will take you to the Vans Website. Join the fans family if
+            you would like! <a href="https://www.vans.com/en-us">Vans.com</a>
+          </p>
+          <p class="mb-0">
+            This link will take you to my profile in spotify if you would like
+            to follow me.
+            <a
+              href="https://open.spotify.com/user/3y1qggt0kva5z83o5lf4fzh5b?si=5d07946382534738"
+              >Juan's Profile</a
+            >
+          </p>
+        </div>
+      </div>
 
 
     <script>
-        // Load only the #site-nav element
-        $("#nav-placeholder").load("navbar.html #site-nav");
+      // Load only the #site-nav element
+      $("#nav-placeholder").load("navbar.html #site-nav");
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
 </html>
